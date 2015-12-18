@@ -1,0 +1,30 @@
+
+
+<div class="container">
+
+<div class="row">
+<h3>Create new user </h3>
+<br>
+<br>
+  <div class="">
+    <%= form_for(@user) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name, class:"form-control" %><br>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class:"form-control" %><br>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class:"form-control" %><br>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation, class:"form-control" %><br><br>
+
+      <%= f.submit "Create account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+
+<br>
+<%= link_to 'Back to Lists', users_path, class: "btn btn-success"  %>
+</div>
+</div>

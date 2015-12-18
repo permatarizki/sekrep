@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1024">
+<title>Responsive_website_static</title>
+<!-- Bootstrap -->
+</head>
+<body>
+
+<div class="container">
+   <div class="row">
+		<br>
+   </div>
+   <div class="row  nav-justified">
+
+	  <%= image_tag "sekrep-logo.jpg", class:'col-md-3 pull-left'  %>
+	
+         <div class= "pull-right form-inline">
+         <br>
+    <%= form_for(:session, url: dashboard_path) do |f| %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.submit "Log in", class: "btn btn-primary " %>
+    <% end %>
+
+        </div>
+    </div>
+
+   <div class="row">
+			<br>
+			<ul class="nav nav-tabs nav-justified custom-nav navbar-default">
+				<li><a href="#"><h4>Home</h4></a></li>
+				<li><a href="#"><h4>Programs</h4></a></li>
+				<li><a href="#"><h4>News</h4></a></li>
+				<li><a href="#"><h4>Gallery</h4></a></li>
+				<li><a href="#"><h4>Registration</h4></a></li>
+            </ul>
+</div>
+
+	<div class="row">
+		
+        
+    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+    	<!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+       <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+		   <%= image_tag "slide-2.jpg", size:"618x246", class:" center-block" %>
+                <div class="carousel-caption">
+                  <p>Pelatihan Kewirausahaan</p>
+		  </div>
+            </div>
+            <div class="item">
+                <%= image_tag "slide-3.jpg", size:"618x246", class:" center-block" %>
+                <div class="carousel-caption">
+                  <p>Pelatihan Bahasa Inggris</p>
+                </div>
+            </div>
+            <div class="item">
+                <%= image_tag "slide-3.jpg", size:"618x246", class:" center-block" %>
+                <div class="carousel-caption">
+                  <p>Program S1 Jurusan bisnis</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+    </div>
+
+
+
+    <div class="row">
+	<br>
+	<br>
+        <div class="col-md-4">
+            <h4 class="text-center">Program Sarjana gelar BSBA</h4>
+			<%= image_tag "slide-3.jpg", size:"180x100", class:"img-circle center-block" %>
+			<br>
+			<br>
+            <p class="text-justify">Program ini merupakan program yang dikhususkan untuk para Tenaga Kerja Indonesia yang bekerja di Korea selatan untuk mendapatkan gelar S1 berupa BSBA (Bachelor of Science in Business Administration). Bla bla bla ....</p>
+            <p><a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-success"> More &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-center">Pelatihan Bahasa Inggris</h4>
+			<%= image_tag "slide-1.jpg", size:"180x100", class:"img-circle center-block" %>
+			<br>
+			<br>
+            <p class="text-justify">Di sini kamu bisa cuap-cuap pake bahasa inggris. berlatih langsung dengan orang asing. Langsung praktek gak cuman teori-teori yang ada dibuku. bla bla bla bla bla.... siung penting enjoy!! .... </p>
+            <p><a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success"> More &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-center">Pelatihan Kewirausahaan</h4>
+            <%= image_tag "slide-2.jpg", size:"180x100", class:"img-circle center-block" %>
+			<br>
+			<br>
+			<p class="text-justify">pengen jadi wirausaha? Di sinilah tempatnya. Kamu bakal banyak punya temen-temen yang berpikiran satu visi dan misi untuk menguasai dunia. Dijamin, setelah pulang dari korea Anda akan kaya RAYA! </p>
+            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success"> More &raquo;</a></p>
+        </div>
+    </div>
+
+
+
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <footer>
+                <p>&copy; Copyright 2015 Sekolah Repoeblijk</p>
+            </footer>
+        </div>
+ 
+	</div>
+</div>
+
+
+
+</body>
+</html>

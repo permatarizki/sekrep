@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1024">
+<title>Responsive_website_static</title>
+<!-- Bootstrap -->
+</head>
+<body>
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<h3>Listing Users</h3>
+
+ <div class="table-responsive"> 
+<table class="table table-bordered">
+  <thead> 
+    <tr>
+      <th>Name</th>
+      <th>Password digest</th>
+          <th> Actions </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= link_to 'Show  ', user , class: "btn btn-success"%> <%= link_to '  Edit  ', edit_user_path(user), class: "btn btn-warning" %>  <%= link_to '  Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>
+<div">
+<%= link_to 'Create New User', new_user_path, class: "btn btn-primary" %>
+
+</div>
+</div>
+</body>
+</html>
