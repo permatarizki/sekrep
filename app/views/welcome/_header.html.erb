@@ -1,10 +1,13 @@
 
    <div class="row">
 		<br>
+		<%= render partial: "shared/flashmessage", flash: flash %>
    </div>
    <div class="row  nav-justified">
 
 	  <%= image_tag "sekrep-logo.jpg", class:'col-md-3 pull-left'  %>
+
+
 	
     </div>
 
@@ -16,7 +19,7 @@
 				<li><a href= <%= welcome_news_path %> ><h4>News</h4></a></li>
 				<li><a href= <%= welcome_gallery_path %>><h4>Gallery</h4></a></li>
 				<li><a href= <%= welcome_registration_path %>><h4>Registration</h4></a></li>
-				<li><a href= <%= new_user_session_path %>><h4>Portal</h4></a></li>
+				<li><a href= <%= dashboard_path %>><h4>Portal</h4></a></li>
             </ul>
 </div>
 
