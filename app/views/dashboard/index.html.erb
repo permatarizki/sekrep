@@ -6,71 +6,17 @@ $(document).ready(function() {
   });
 });
 </head>
-
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top navbar-dashboard-custom " role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Sekolah Repoeblijk portal  E-Class</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="dashboard/courses">Courses</a></li>
-            <li><a href="#">Grades Evaluation</a></li>
-            <li> <a href="#">Administration Fee</a></li>
-            <li><a href="#">Setting Profiles</a></li>
-            <li><a href="#">ONLINE TEST</a></li>
-            <li><a href="#">Help</a></li>
-                     <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-          </ul>
-
-        </div>
-      </div>
-</nav>
-
-<div class="container-fluid">
-      
-      <div class="row row-offcanvas row-offcanvas-left">
-        
-         <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
-            <ul class="nav nav-sidebar">
-              <li><a href="dashboard/courses">Courses</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-<br><br><br>
-              <li><a href="#">Grades Evaluation</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-              <li><a href="#">Administration Fee</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-              <li><a href="#">Setting Profiles</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-              <li><a href="#">Help</a></li>
-            </ul> 
-        </div><!--/span-->
-        
-        <div class="col-sm-9 col-md-10 main">
-          
-          <!--toggle sidebar button-->
-          <p class="visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
-          </p>
-          
-                 <h2 class="page-header">
-            Student Dashboard
-            
+<div class="container">
+<%= render "dashboard/navdashboard" %>
+    <h2 class="page-header">
+             Dashboard Pengumuman  
           </h2>
 
           <div class="row placeholders">
+
             <div class="col-xs-6 col-sm-3 placeholder text-center">
+
               <img src="//placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
               <h4>Label</h4>
               <span class="text-muted">Something else</span>
@@ -92,9 +38,8 @@ $(document).ready(function() {
             </div>
           </div>
           
-          <hr>
-
-          <h2 class="sub-header">Daftar Perkuliahan </h2>
+          <div class="row placeholders">
+          	            	          	          <h2 class="sub-header">Daftar Perkuliahan </h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -223,12 +168,9 @@ $(document).ready(function() {
             </table>
           </div>
 
-          <a href="http://www.bootply.com/128936">Get the Source Code</a>
+          </div>
           
-      </div><!--/row-->
-	</div>
-</div><!--/.container-->
-
-
+          
+</div>
 </body>
         
