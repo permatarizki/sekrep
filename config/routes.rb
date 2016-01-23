@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'welcome/program'
+  get 'welcome/index'
+  get 'welcome/gallery'
+  get 'welcome/registration'
+  get 'welcome/news'
+  
+
+  devise_for :users
   resources :users
   #get 'welcome/index'
 

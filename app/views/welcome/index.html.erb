@@ -4,48 +4,15 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=1024">
-<title>Responsive_website_static</title>
+<title>Sekolah Repoeblijk</title>
 <!-- Bootstrap -->
 </head>
 <body>
 
 <div class="container">
-   <div class="row">
-		<br>
-   </div>
-   <div class="row  nav-justified">
+<%= render "welcome/header" %>
 
-	  <%= image_tag "sekrep-logo.jpg", class:'col-md-3 pull-left'  %>
 	
-         <div class= "pull-right form-inline">
-         <br>
-    <%= form_for(:session, url: dashboard_path) do |f| %>
-
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
-
-      <%= f.submit "Log in", class: "btn btn-primary " %>
-    <% end %>
-
-        </div>
-    </div>
-
-   <div class="row">
-			<br>
-			<ul class="nav nav-tabs nav-justified custom-nav navbar-default">
-				<li><a href="#"><h4>Home</h4></a></li>
-				<li><a href="#"><h4>Programs</h4></a></li>
-				<li><a href="#"><h4>News</h4></a></li>
-				<li><a href="#"><h4>Gallery</h4></a></li>
-				<li><a href="#"><h4>Registration</h4></a></li>
-            </ul>
-</div>
-
-	<div class="row">
-		
         
     <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
     	<!-- Carousel indicators -->
