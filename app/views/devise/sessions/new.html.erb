@@ -5,11 +5,10 @@
 		<div class="container" align="centre">
 			<%= render "welcome/header" %>
 			<br>
-			<br>
-			<br>
-			<br>
-			<div  style="text-align:center">
-				<h4><span>Masukan email & password anda untuk mengakses portal:</span></h4>
+			<div class="border-form-div" style="text-align:center">
+				<p><h3>Sign In</h3></p>
+
+				<h5><span>Masukan email & password anda untuk mengakses portal:</span></h5>
 
 				<br>
 				<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
