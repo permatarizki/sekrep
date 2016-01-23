@@ -4,8 +4,14 @@ Rails.application.routes.draw do
   get 'welcome/gallery'
   get 'welcome/registration'
   get 'welcome/news'
+  get 'dashboard/admfee'
+  get 'dashboard/courses'
+  get 'dashboard/grades'
+  get 'dashboard/help'    
+  get 'dashboard/index'
+  get 'dashboard/onlinetest'
+  get 'dashboard/profiles'
   
-
   devise_for :users
   resources :users
   #get 'welcome/index'

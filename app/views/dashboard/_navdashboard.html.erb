@@ -1,3 +1,10 @@
+<head>
+$(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
+</head>
 <nav class="navbar navbar-inverse navbar-fixed-top navbar-dashboard-custom " role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -7,16 +14,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Sekolah Repoeblijk portal  E-Class</a>
+          <a class="navbar-brand" href=<%= dashboard_path%>>Sekolah Repoeblijk portal  E-Class</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="dashboard/courses">Courses</a></li>
-            <li><a href="#">Grades Evaluation</a></li>
-            <li> <a href="#">Administration Fee</a></li>
-            <li><a href="#">Setting Profiles</a></li>
-            <li><a href="#">ONLINE TEST</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href=<%= dashboard_courses_path %>>Courses</a></li>
+            <li><a href=<%= dashboard_grades_path %>>Grades Evaluation</a></li>
+            <li><a href=<%= dashboard_admfee_path %>>Administration Fee</a></li>
+            <li><a href=<%= dashboard_profiles_path %>>Setting Profiles</a></li>
+            <li><a href=<%= dashboard_onlinetest_path %>>ONLINE TEST</a></li>
+            <li><a href=<%= dashboard_help_path %>>Help</a></li>
                      <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
           </ul>
 

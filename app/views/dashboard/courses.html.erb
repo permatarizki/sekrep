@@ -1,38 +1,9 @@
 <html>
-<head>
-$(document).ready(function() {
-  $('[data-toggle=offcanvas]').click(function() {
-    $('.row-offcanvas').toggleClass('active');
-  });
-});
-</head>
+<head></head>
 
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top navbar-dashboard-custom" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/dashboard">Sekolah Repoeblijk portal  E-Class</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Grades Evaluation</a></li>
-            <li> <a href="#">Administration Fee</a></li>
-            <li><a href="#">Setting Profiles</a></li>
-                     <li><a href="#">ONLINE TEST</a></li>
-            <li><a href="#">Help</a></li>
-                     <li><a href="#">Log Out</a></li>
-          </ul>
-
-        </div>
-      </div>
-</nav>
+<div class="container">
+<%= render "dashboard/navdashboard" %>
 
 <div class="container-fluid">
       
@@ -127,5 +98,6 @@ $(document).ready(function() {
      </div>
 </div>
 
+</div>
 </body>
 </html>
