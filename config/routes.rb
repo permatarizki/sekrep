@@ -1,4 +1,52 @@
 Rails.application.routes.draw do
+  get 'course/course1'
+
+  get 'course/course2'
+
+  get 'course/course3'
+
+  get 'course/course4'
+
+  get 'course/course5'
+
+  get 'course/course6'
+
+  get 'course/course7'
+
+  get 'course/course8'
+
+  get 'course/course9'
+
+  get 'course/course10'
+
+  get 'course/course11'
+
+  get 'course/course12'
+
+  get 'course/course13'
+
+  get 'course/course14'
+
+  get 'course/course15'
+
+  get 'course/course16'
+
+  get 'course/course17'
+
+  get 'course/course18'
+
+  get 'course/course19'
+
+  get 'course/course20'
+
+  get 'course/course21'
+
+  get 'course/course22'
+
+  get 'course/course23'
+
+  get 'course/course24'
+
   get 'welcome/program'
   get 'welcome/index'
   get 'welcome/gallery'
